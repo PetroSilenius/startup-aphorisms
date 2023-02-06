@@ -1,0 +1,12 @@
+name: Re-deploy site to generate a new aphorism
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every Monday at 12:00 UTC
+    - cron: '0 0 12 * * 1'
+
+jobs:
+  deploy:
+    - name: Deploy site
+      run: curl -X GET `https://api.vercel.com/v1/integrations/deploy/${{ secrets.DEPLOY_URL_HASH }}``
