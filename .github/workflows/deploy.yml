@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Every Monday at 12:00 UTC
-    - cron: '0 0 12 * * 1'
+    - cron: '0 12 * * 1'
 
 jobs:
   deploy:
