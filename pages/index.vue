@@ -6,6 +6,8 @@ const headers = {
   Authorization: 'Bearer ' + process.env.OPENAI_API_KEY,
 };
 
+const prompt = 'Write a short inspirational goal-oriantated aphorism for a startup';
+
 const { data: texts, error } = await useFetch<{
   choices: [
     {
@@ -19,7 +21,7 @@ const { data: texts, error } = await useFetch<{
   headers,
   method: 'POST',
   body: JSON.stringify({
-    prompt: 'Write a short inspirational goal-oriantated aphorism for a startup',
+    prompt,
     max_tokens: 5,
     temperature: 0.9,
     model: 'text-ada-001',
@@ -56,7 +58,7 @@ const imageUrl = images?.value?.data[0].url;
 <template>
   <div class="grid">
     <div>
-      <h1>"Write an aphorism for a startup that fits with a nice background image"</h1>
+      <h1>"{{ prompt }}"</h1>
       <Aphorism :aphorism="aphorism" :imageUrl="imageUrl" />
     </div>
     <div>
