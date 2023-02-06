@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Aphorism from './components/Aphorism.vue';
+import Aphorism from '../components/Aphorism.vue';
 
 const aphorism = "Don't be afraid to fail";
 const imageUrl = 'https://source.unsplash.com/random/500x420';
