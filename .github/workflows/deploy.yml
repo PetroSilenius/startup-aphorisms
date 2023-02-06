@@ -1,4 +1,4 @@
-name: Re-deploy site to generate a new aphorism
+name: Re-deploy site
 
 on:
   workflow_dispatch:
@@ -10,5 +10,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy site
+      - name: Call webhook
         run: curl -X GET "https://api.vercel.com/v1/integrations/deploy/${{ secrets.DEPLOY_URL_HASH }}"
