@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call webhook
-        run: curl -X GET "https://api.vercel.com/v1/integrations/deploy/${{ secrets.DEPLOY_URL_HASH }}"
+        run: curl -X POST -d {} "https://api.netlify.com/build_hooks/${{ secrets.DEPLOY_URL_HASH }}"
