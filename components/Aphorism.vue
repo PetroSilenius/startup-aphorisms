@@ -39,6 +39,7 @@ img {
 
 .aphorism {
   position: absolute;
+  max-width: 500px;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
