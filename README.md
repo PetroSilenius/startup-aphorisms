@@ -1,19 +1,24 @@
-# Nuxt 3 Minimal Starter
+# [_Startup aphorisms 📜_](https://startup-aphorisms.netlify.app)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/41555aaf-f8b9-4093-98d5-188d4591469a/deploy-status)](https://app.netlify.com/sites/startup-aphorisms/deploys)
+
+Startup-aphorisms is a project that uses OpenAI's API to generate generic aphorisms about startup culture.
+
+A new aphorism is generated every Monday at 12:00 UTC and on every push to the main branch.
+
+## Tech Stack
+
+- [Nuxt 3](https://v3.nuxtjs.org/)
+- [Vue 3](https://v3.vuejs.org/)
+- [pnpm](https://pnpm.io/)
+- [Netlify](https://www.netlify.com/)
+- [OpenAI](https://openai.com/)
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
 pnpm install
 ```
 
@@ -38,5 +43,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
